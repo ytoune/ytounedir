@@ -4,8 +4,7 @@
   "description": "ウェブサイトでなにかする",
   "main": "index.js",
   "scripts": {
-    "build2": "webpack --config webpack.config.js --progress",
-    "build": "webpack --config webpack.config.js",
+    "build": "webpack --config webpack.config.js --progress",
     "watch": "webpack --config webpack.config.js --watch --progress",
     "push-page": "node publish.js",
     "deploy": "npm build && npm push-page",
