@@ -6,8 +6,8 @@
   "scripts": {
     "build": "webpack --config webpack.config.js --progress",
     "watch": "webpack --config webpack.config.js --watch --progress",
-    "push-page": "node publish.js",
-    "deploy": "npm build && npm push-page",
+    "push-page": "gh-pages -d dist",
+    "deploy": "npm run-script build && npm run-script push-page",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
